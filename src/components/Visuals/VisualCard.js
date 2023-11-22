@@ -12,10 +12,10 @@ function VisualCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-         <Button variant="primary" href={props.ghLink} target="_blank">
+         {/* <Button variant="primary" href={props.ghLink} target="_blank">
          
           {props.isBlog ? "Blog" : "More"}
-        </Button>
+        </Button> */}
         {"\n"} 
         {"\n"}
 

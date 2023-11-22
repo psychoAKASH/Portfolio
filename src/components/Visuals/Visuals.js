@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import VisualCard from "./VisualCard";
 import Particle from "../Particle";
+import spotifyDashboard from "../../Assets/Projects/spotifyDashboard.jpg";
 
 function Visuals() {
   return (
@@ -17,12 +18,12 @@ function Visuals() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <VisualCard
-              // imgPath={}
+              imgPath={spotifyDashboard}
               isBlog={false}
-              title=""
-              description=""
+              title="Spotify Dashboard"
+              description="A dashboard created on PowerBI. Spotify data is used in this."
               // ghLink=""
-              demoLink=""
+              // demoLink=""
             />
           </Col>
 
