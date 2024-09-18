@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+import slackbot from "../../Assets/Projects/slack_bot.png";
 import art from "../../Assets/Projects/daleprojectFinal.png";
 import carprice from "../../Assets/Projects/CarPricePredictor.png";
 import dbwebapp from "../../Assets/Projects/DiabeticPredictionWebAppFinal.png";
@@ -21,6 +22,17 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+            <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={slackbot}
+              isBlog={false}
+              title="PDF Bot integrated inside Slack."
+              description="With the help of an LLM, a Slack bot is trained on the Python Django documentation. It can answer any question by following the documentation it was trained on. Get more specific responses regarding the documentation."
+              ghLink="https://github.com/psychoAKASH/pdfbot"
+              // demoLink=""
+            />
+          </Col>
+                
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={carprice}
