@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+import articleapp from "../../Assets/Projects/article_app.png";
 import slackbot from "../../Assets/Projects/slack_bot.png";
 import art from "../../Assets/Projects/daleprojectFinal.png";
 import carprice from "../../Assets/Projects/CarPricePredictor.png";
@@ -22,6 +23,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+             <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={articleapp}
+              isBlog={false}
+              title="Article WebApp"
+              description="Article Webapp built with beautiful user interface with the help of tailwindcss. Backend powered by Django and fully  customized user authentication mechanism."
+              ghLink="https://github.com/psychoAKASH/article_app"
+              demoLink="https://article-app-tsfc.onrender.com/"
+            />
+          </Col>
             <Col md={4} className="project-card">
             <ProjectCard
               imgPath={slackbot}
